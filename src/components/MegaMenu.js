@@ -10,6 +10,9 @@ class MegaMenu extends Component {
 
     render() {
 
+        if (!this.props.data) {
+            return null;
+        }
 
         const lables = this.props.data.menu.map((lkey, index) => {
 
